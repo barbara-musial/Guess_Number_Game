@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess my number!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" ; />
+  </head>
+  <body>
+    <h1>Guess my number!</h1>
+    <table class="secretNumberTable">
+      <td>?</td>
+    </table>
+    <form>
+      <label>Choose number between 1 and 20...</label><br />
+      <input id="usersInput" type="number" min="1" max="20" />
+      <input id="check" type="button" value="CHECK" />
+    </form>
+    <div id="hint">Start guessing...</div>
+    <table class="scoresTable">
+      <tr>
+        <td>Score:</td>
+        <td id="score"></td>
+      </tr>
+      <tr>
+        <td>High Score:</td>
+        <td id="highScore"></td>
+      </tr>
+    </table>
+    <form><input id='again' type='button' value="Again?"</form>
+    <script src="script.js"></script>
+  </body>
+</html>
