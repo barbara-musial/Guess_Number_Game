@@ -17,6 +17,8 @@ document.querySelector("#check").addEventListener("click", function () {
       highscore = score;
       document.querySelector("#highScore").textContent = highscore;
     }
+    document.querySelector("body").style.backgroundImage =
+      "linear-gradient(to bottom right, rgb(133, 133, 129), #29df15)";
   } else if (usersInput > secretNumber) {
     if (score > 1) {
       document.querySelector("#hint").textContent = "Too high!";
@@ -45,4 +47,6 @@ document.querySelector("#again").addEventListener("click", function () {
   document.querySelector("#secretNumber").textContent = "?";
   document.querySelector("#usersInput").value = "";
   document.querySelector("#hint").textContent = "Start guessing...";
+  document.querySelector("body").style.backgroundImage =
+    "linear-gradient(to bottom right, rgb(133, 133, 129), rgb(224, 53, 53))";
 });
