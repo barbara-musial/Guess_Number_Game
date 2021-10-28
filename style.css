@@ -1,3 +1,12 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(133, 133, 129),
+    rgb(224, 53, 53)
+  );
+  background-attachment: fixed;
+}
+
 .secretNumberTable {
   width: 5rem;
   height: 5rem;
